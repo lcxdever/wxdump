@@ -1,0 +1,64 @@
+spring:
+  datasource:
+    druid:
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: 123456
+    dynamic:
+      druid:
+        initial-size: 5
+        max-active: 8
+        min-idle: 3
+        max-wait: 1000
+        test-while-idle: false
+wechat-offset:
+  version:
+    "[3.9.8.25]":
+      nickname: 65000920
+      account: 65002256
+      mobile: 65000728
+    "[3.9.9.27]":
+      nickname: 68065304
+      account: 68065080
+      mobile: 68065112
+    "[3.9.9.35]":
+      nickname: 68065304
+      account: 68065080
+      mobile: 68065112
+    "[3.9.9.43]":
+      nickname: 68065944
+      account: 68065720
+      mobile: 68065752
+    "[3.9.10.19]":
+      nickname: 95129768
+      account: 95129544
+      mobile: 95129576
+    "[3.9.10.27]":
+      nickname: 95125656
+      account: 95126992
+      mobile: 95125464
+    "[3.9.11.9]":
+      nickname: 93463000
+      account: 93462776
+      mobile: 93462808
+    "[3.9.11.17]":
+      nickname: 93550360
+      account: 93550136
+      mobile: 93550168
+    "[3.9.11.19]":
+      nickname: 93550296
+      account: 93550072
+      mobile: 93550104
+mybatis-plus:
+  global-config:
+    banner: off
+  #configuration:
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+logging:
+  level:
+    root: INFO
+    com.alibaba.druid.pool.DruidDataSource: WARN
+    com.baomidou.dynamic.datasource.DynamicRoutingDataSource: WARN
+    com.baomidou.dynamic.datasource.destroyer.DefaultDataSourceDestroyer: WARN
+
